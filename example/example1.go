@@ -5,7 +5,7 @@ import (
 )
 
 func GrayCode(n int) []int {
-	if n == 0 {
+	if n < 1 || n > 16 {
 		return nil
 	}
 	lenNum := math.Pow(float64(n), 2)
