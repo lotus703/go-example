@@ -1,7 +1,6 @@
 package example
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -24,10 +23,7 @@ func generateGrayCode(n, step int, num *[]int, res *[]int) {
 	*res = append(*res, convertBinaryToDeximal(*num))
 
 	if step%2 == 0 {
-		//fmt.Println(step)
-		fmt.Println(num)
 		(*num)[len(*num)-1] = flipDigit((*num)[len(*num)-1])
-		fmt.Println(num)
 	} else {
 		index := len(*num) - 1
 		for ; index >= 0; index-- {
